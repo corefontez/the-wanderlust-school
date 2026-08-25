@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap">
 
 <style>
 /* ============ TOKENS (single warm-paper theme, painted explicitly) ============ */
@@ -25,7 +25,8 @@
   --line:rgba(95,72,48,.10);
   --shadow:rgba(51,43,43,.16);
 
-  --display:"Syne",system-ui,sans-serif;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --accent:"Syne",system-ui,sans-serif;
   --body:"DM Sans",system-ui,sans-serif;
 
   --maxw:1120px;
@@ -59,7 +60,7 @@ h1,h2,h3{font-family:var(--display);line-height:1.02;text-wrap:balance;margin:0;
 
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .eyebrow{
-  font-family:var(--display);font-weight:700;font-size:.78rem;
+  font-family:var(--accent);font-weight:700;font-size:.78rem;
   letter-spacing:.16em;text-transform:uppercase;color:var(--orange);
   display:inline-flex;align-items:center;gap:.55rem;
 }
@@ -67,7 +68,7 @@ h1,h2,h3{font-family:var(--display);line-height:1.02;text-wrap:balance;margin:0;
 
 /* highlighter marker block (brand signature) */
 .mk{
-  display:inline-block;color:var(--offwhite);
+  display:inline-block;color:var(--offwhite);font-family:var(--accent);
   padding:.02em .32em;border-radius:3px;
   transform:rotate(-2deg);
   box-shadow:1px 2px 0 rgba(51,43,43,.14);
@@ -102,7 +103,7 @@ header{position:sticky;top:0;z-index:50;
 .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
 .brand img{width:42px;height:42px}
 .brand .bw{display:flex;flex-direction:column;line-height:1}
-.brand .bw b{font-family:var(--display);font-weight:800;color:var(--purple);font-size:1.02rem;letter-spacing:-.02em}
+.brand .bw b{font-family:var(--accent);font-weight:800;color:var(--purple);font-size:1rem;letter-spacing:-.01em}
 .brand .bw i{font-style:normal;font-family:var(--body);font-weight:500;font-size:.62rem;letter-spacing:.04em;color:var(--taupe);text-transform:lowercase;margin-top:2px}
 .nav-links{display:flex;align-items:center;gap:1.6rem}
 .nav-links a{text-decoration:none;font-weight:600;font-size:.94rem;color:var(--ink);opacity:.82}
@@ -132,7 +133,7 @@ header{position:sticky;top:0;z-index:50;
   position:absolute;z-index:3;width:118px;height:118px;border-radius:50%;
   border:2.5px dashed var(--purple);color:var(--purple);
   display:flex;align-items:center;justify-content:center;text-align:center;
-  font-family:var(--display);font-weight:700;font-size:.62rem;letter-spacing:.12em;
+  font-family:var(--accent);font-weight:700;font-size:.62rem;letter-spacing:.12em;
   text-transform:uppercase;line-height:1.25;padding:10px;
   background:rgba(255,251,239,.72);transform:rotate(-13deg);
   right:-26px;top:-30px;box-shadow:0 6px 16px -8px var(--shadow)}
@@ -151,7 +152,7 @@ section{padding:70px 0}
   box-shadow:5px 6px 0 rgba(51,43,43,.14);position:relative;transition:transform .18s ease}
 .pcard:hover{transform:translateY(-4px)}
 .pcard .tag{position:absolute;top:-14px;left:20px;background:var(--yellow);color:var(--ink);
-  font-family:var(--display);font-weight:700;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;
+  font-family:var(--accent);font-weight:700;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;
   padding:.28rem .7rem;border-radius:999px;border:2px solid var(--ink);transform:rotate(-2.5deg)}
 .pcard .emoji{font-size:2rem;line-height:1}
 .pcard h3{font-size:1.4rem;font-weight:700;color:var(--purple);margin:.7rem 0 .5rem}
@@ -181,9 +182,9 @@ section{padding:70px 0}
 .voyager::after{content:"";position:absolute;right:-60px;bottom:-60px;width:230px;height:230px;border-radius:50%;
   background:radial-gradient(circle at 30% 30%,rgba(255,122,52,.9),rgba(255,122,52,0) 70%);opacity:.65}
 .voyager .flag{display:inline-flex;align-items:center;gap:.5rem;background:var(--orange);color:var(--ink);
-  font-family:var(--display);font-weight:700;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;
+  font-family:var(--accent);font-weight:700;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;
   padding:.32rem .8rem;border-radius:999px;border:2px solid var(--ink);transform:rotate(-1.5deg)}
-.voyager h3{font-size:2.6rem;font-weight:800;margin:.9rem 0 .1rem;letter-spacing:-.02em}
+.voyager h3{font-family:var(--accent);font-size:2.5rem;font-weight:800;margin:.9rem 0 .1rem;letter-spacing:-.02em}
 .voyager .level{font-family:var(--body);font-weight:600;opacity:.8;font-size:.95rem;text-transform:uppercase;letter-spacing:.1em}
 .voyager .promise{font-family:var(--display);font-size:1.35rem;font-weight:700;color:var(--yellow);margin:1rem 0 1.3rem;letter-spacing:-.01em}
 .voyager .facts{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.3rem}
@@ -197,11 +198,11 @@ section{padding:70px 0}
 
 .scard{background:var(--paper);border:2px solid var(--ink);border-radius:18px;padding:28px;
   box-shadow:5px 6px 0 rgba(51,43,43,.14);display:flex;flex-direction:column}
-.scard h3{font-size:1.55rem;font-weight:800;color:var(--purple)}
+.scard h3{font-family:var(--accent);font-size:1.5rem;font-weight:800;color:var(--purple)}
 .scard .level{font-family:var(--body);font-weight:600;color:var(--taupe);font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin-top:.15rem}
 .scard p{font-size:1rem;color:var(--ink);margin:.9rem 0 1.3rem;flex:1}
 .scard.soon{background:repeating-linear-gradient(135deg,var(--cream-warm),var(--cream-warm) 14px,var(--paper) 14px,var(--paper) 28px)}
-.soon-tag{align-self:flex-start;background:var(--ink);color:var(--offwhite);font-family:var(--display);font-weight:700;
+.soon-tag{align-self:flex-start;background:var(--ink);color:var(--offwhite);font-family:var(--accent);font-weight:700;
   font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .75rem;border-radius:999px}
 
 /* founder */
@@ -256,7 +257,7 @@ footer{padding:54px 0 60px;border-top:1.5px solid rgba(51,43,43,.14)}
 .foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:26px}
 .foot .fb{display:flex;align-items:center;gap:14px}
 .foot .fb img{width:66px;height:66px}
-.foot .fb b{font-family:var(--display);font-weight:800;color:var(--purple);font-size:1.15rem;display:block;line-height:1.1}
+.foot .fb b{font-family:var(--accent);font-weight:800;color:var(--purple);font-size:1.1rem;display:block;line-height:1.1}
 .foot .fb span{font-size:.82rem;color:var(--taupe);letter-spacing:.12em;text-transform:uppercase}
 .foot .fr{text-align:right;font-size:.9rem;color:var(--taupe);max-width:38ch}
 .foot .fr a{color:var(--purple);font-weight:600;text-decoration:none}
