@@ -64,6 +64,22 @@
   .arrow{margin-left:auto; color:var(--lilac); font-size:22px; font-weight:700; padding-left:6px;}
   .link:hover .arrow{color:var(--orange);}
 
+  /* hero = the free trial, star of the page (orange + bigger) */
+  .hl-o{background:var(--orange); color:#fff; font-weight:800; padding:1px 6px 2px; border-radius:0;
+    box-decoration-break:clone; -webkit-box-decoration-break:clone;}
+  .link.hero{padding:20px 18px; border-color:var(--orange); border-width:2px;
+    box-shadow:0 4px 0 rgba(255,122,52,.28);}
+  .link.hero .chip{width:54px; height:54px; font-size:26px;}
+  .link.hero .lt .t{font-size:19px;}
+  .link.hero .lt .s{font-size:13px;}
+
+  /* secondary = the English offer, kept quiet so it does not compete */
+  .link.secondary{padding:11px 16px; border-color:#E3D8C5; box-shadow:none;}
+  .link.secondary .chip{width:38px; height:38px; font-size:18px;}
+  .link.secondary .lt .t{font-size:14.5px; color:var(--muted);}
+  .link.secondary .lt .s{font-size:11.5px;}
+  .link.secondary .arrow{font-size:18px;}
+
   /* coming-soon (free ebook, reserved) */
   .link.soon{border-style:dashed; border-color:#D8CBB6; background:#FBF6EC;
     box-shadow:none; cursor:default;}
@@ -94,9 +110,9 @@
   <span class="note">vem, bora conversar! &#128075;</span>
 
   <nav class="links">
-    <a class="link" href="https://ig.me/m/thewanderlust.school" target="_blank" rel="noopener">
+    <a class="link hero" href="https://ig.me/m/thewanderlust.school" target="_blank" rel="noopener">
       <span class="chip p">&#127463;&#127479;</span>
-      <span class="lt"><span class="t">Book a 1:1 <span class="hl-p">FREE trial</span> lesson</span><span class="s">Brazilian Portuguese</span></span>
+      <span class="lt"><span class="t">Book a 1:1 <span class="hl-o">FREE trial</span> lesson</span><span class="s">Brazilian Portuguese</span></span>
       <span class="arrow">&rsaquo;</span>
     </a>
 
@@ -106,9 +122,9 @@
       <span class="arrow">&rsaquo;</span>
     </a>
 
-    <a class="link" href="https://ig.me/m/thewanderlust.school" target="_blank" rel="noopener">
+    <a class="link secondary" href="https://ig.me/m/thewanderlust.school" target="_blank" rel="noopener">
       <span class="chip g">&#127482;&#127480;</span>
-      <span class="lt"><span class="t">Aula particular <span class="hl-p">EXPERIMENTAL</span></span><span class="s">Inglês para brasileiros</span></span>
+      <span class="lt"><span class="t">Aula de ingl&ecirc;s</span><span class="s">Para brasileiros</span></span>
       <span class="arrow">&rsaquo;</span>
     </a>
   </nav>
